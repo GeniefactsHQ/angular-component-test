@@ -1,0 +1,12 @@
+<label class="block">
+  <span *ngIf="label">{{label}}</span>
+  <input
+    class="form-input w-full rounded-lg border border-slate-300 bg-transparent px-3 py-2 placeholder:text-slate-400/70 hover:border-slate-400 focus:border-primary dark:border-navy-450 dark:hover:border-navy-400 dark:focus:border-accent"
+    [placeholder]="placeholder"
+    [(ngModel)]="value" (ngModelChange)="valueChange.emit($event)"
+    [class]="inputClasses"
+    [disabled]="disabled"
+    type="text"
+  />
+  <span *ngIf="helperText" class="text-tiny+ text-slate-400 dark:text-navy-300">{{helperText}}</span>
+</label>

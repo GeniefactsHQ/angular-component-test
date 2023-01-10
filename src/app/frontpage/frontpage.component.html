@@ -1,0 +1,24 @@
+<main class="w-full px-[var(--margin-x)] pb-8">
+  <div class="w-72 m-12">
+    <ui-forms-input-text></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text placeholder="With placeholder"></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text label="With label" placeholder="and placeholder"></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text [label]="inputTextInLabel" placeholder="and placeholder"
+                         [(value)]="inputTextInLabel"></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text helperText="Helper text"></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text label="Rounded" inputClasses="rounded-full"></ui-forms-input-text>
+  </div>
+  <div class="w-72 m-12">
+    <ui-forms-input-text [disabled]="true" placeholder="Disabled"></ui-forms-input-text>
+  </div>
+</main>
